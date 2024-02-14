@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--enlace de css-->
+    <link rel="stylesheet" href="style_formulario.css" />
+    <!--enlace de bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!--enlace de iconos-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container col-10">
+      <img src="multimedia/logo.png" alt="hotel sheraton" />
+      <!--primer formulario-->
+      <section class="card">
+        <div class="card-header">
+          <h3>Datos de Reserva de habitación</h3>
+        </div>
+        <div class="card-body">
+          <form action="">
+            <section class="row">
+              <div class="col-12 col-lg-6">
+                <label for="Nombre" class="form-label">Primer Nombre</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Nombre"
+                  id="Nombre"
+                />
+              </div>
+              <div class="col-12 col-lg-6">
+                <label for="Apellido" class="form-label">
+                  Primer Apellido</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Apellido"
+                  id="Apellido"
+                />
+              </div>
+              <div class="col-12 col-lg-6 mt-3">
+                <label for="DUI" class="form-label">DUI</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="00000000-0"
+                  id="DUI"
+                />
+              </div>
+              <div class="col-12 col-lg-6 mt-3">
+                <label for="Telefono" class="form-label">Teléfono</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="0000-0000"
+                  id="Telefono"
+                />
+              </div>
+              <div class="col-12 mt-3">
+                <label for="correo" class="form-label"
+                  >Correo Electronico</label
+                >
+                <div class="input-group">
+                  <div class="input-group-text">@</div>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="correo"
+                    placeholder="micorreo@gmail.com"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 mt-3">
+                <label for="entrada" class="form-label">Fecha Entrada</label>
+                <div class="input-group">
+                  <div class="input-group-text">
+                    <i class="fa-solid fa-calendar-days"></i>
+                  </div>
+                  <input type="date" class="form-control" id="entrada" />
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 mt-3">
+                <label for="salida" class="form-label">Fecha Salida</label>
+                <div class="input-group">
+                  <div class="input-group-text">
+                    <i class="fa-solid fa-calendar-days"></i>
+                  </div>
+                  <input type="date" class="form-control" id="salida" />
+                </div>
+              </div>
+            </section>
+          </form>
+        </div>
+      </section>
+      <!--segundo formulario-->
+      <section class="card mt-5">
+        <div class="card-header">
+          <h3>Reservas adicionales</h3>
+        </div>
+        <div class="card-body">
+          <form action="">
+            <section class="row">
+              <label class="form-label">Servicio de comida:</label>
+              <div
+                class="col-12 d-flex justify-content-evenly align-items-center"
+              >
+                <div class="form-check">
+                  <input
+                    class="form-check-input bg-body-secondary"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="Corriente"
+                    checked
+                  />
+                  <label class="form-check-label" for="Corriente">
+                    Corriente
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input bg-body-secondary"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="Basico"
+                  />
+                  <label class="form-check-label" for="Basico"> Basico </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input bg-body-secondary"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="Premium"
+                  />
+                  <label class="form-check-label" for="Premium">
+                    Premium
+                  </label>
+                </div>
+              </div>
+            </section>
+            <section class="row">
+              <div class="col-12 col-lg-6 mt-3">
+                <label class="form-label mt-3 col-12 col-lg-6"
+                  >Servicio de Barra:</label
+                >
+                <div class="form-check ms-5 col-12 col-lg-5">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="Barra"
+                  />
+                  <label class="form-check-label" for="Barra"> Activar </label>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 mt-3">
+                <label class="form-label mt-3 col-12 col-lg-6"
+                  >Servicio al cuarto:</label
+                >
+                <div class="form-check ms-5 col-12 col-lg-5">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="Barra"
+                  />
+                  <label class="form-check-label" for="Barra"> Activar </label>
+                </div>
+              </div>
+            </section>
+          </form>
+        </div>
+      </section>
+      <!--tercer formulario-->
+      <section class="card mt-5">
+        <div class="card-header">
+          <h3>Forma de pago</h3>
+        </div>
+        <div class="card-body">
+          <form action="">
+            <section class="row">
+              <div class="col-12 col-lg-6">
+                <img
+                  id="tarjetas"
+                  src="multimedia/tarjetas.png"
+                  alt=" tarjetas"
+                />
+                <div class="dropdown mt-3 ms-5">
+                  <button
+                    class="btn btn-outline-dark dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Selecciona tu tarjeta
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Visa</a></li>
+                    <li><a class="dropdown-item" href="#">Master Card</a></li>
+                    <li><a class="dropdown-item" href="#">Discover</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">American Express</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 mt-3">
+                <label for="csv" class="form-label">CVC</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="000"
+                  id="csv"
+                />
+              </div>
+              <div class="col-12 col-lg-6 mt-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Nombre"
+                  id="name"
+                />
+              </div>
+              <div class="col-12 col-lg-6 mt-3">
+                <label for="lastname" class="form-label">Apellidos</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Apellidos"
+                  id="lastname"
+                />
+              </div>
+              <div class="col-12 col-lg-6 mt-3">
+                <label for="expira" class="form-label"
+                  >Fecha de Expiracion</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="00/00/00"
+                  id="expira"
+                />
+              </div>
+              <div class="col-12 col-lg-6 mt-3">
+                <label for="tarjeta" class="form-label"
+                  >Numero de la tarjeta</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="00000000000"
+                  id="tarjeta"
+                />
+              </div>
+            </section>
+          </form>
+        </div>
+      </section>
+      <!--botones-->
+      <div class="row mt-4 justify-content-md-end mb-5">
+        <span class="border border-bottom-0"></span>
+        <button
+          type="button"
+          class="btn btn-outline-success col-lg-2 ms-2 mt-2"
+        >
+          Pagar
+        </button>
+        <button type="button" class="btn btn-outline-dark col-lg-2 ms-2 mt-2">
+          Cancelar
+        </button>
+      </div>
+    </div>
+    <!--script de bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
